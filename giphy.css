@@ -1,0 +1,30 @@
+body {
+    background: #F7F8F8;
+    background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);
+    background: linear-gradient(to right, #ACBB78, #F7F8F8);
+    color: rgb(69, 49, 11);
+    font-style: oblique;
+    font-size: 24px;
+}
+
+input {
+    border: 2px solid #e29e51;
+    height: 30px;
+    border-radius: 6px;
+}
+
+button {
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+    border: 2px solid #2d69a5;
+    background-color: #6584a2;
+    border-radius: 6px;
+}
+
+.container {
+    justify-items: center;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+}
