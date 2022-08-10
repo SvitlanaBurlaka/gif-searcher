@@ -21,7 +21,7 @@ button.addEventListener("click", () => {
       .then((content) => {
         divTag.innerHTML = "";
         for (let i = 0; i < limitOfGifNumber; i++) {
-          divTag.innerHTML += `<img src ="${content.data[i].images.fixed_width.url}"><br/>`;
+          divTag.innerHTML += `<img src ="${content.data[i].images.fixed_width.url}">`;
         }
       });
   }

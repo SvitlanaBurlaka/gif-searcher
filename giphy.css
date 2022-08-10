@@ -7,14 +7,19 @@ body {
     font-size: 24px;
 }
 
+h1 {
+    text-align: center;
+}
+
 input {
     border: 2px solid #e29e51;
-    height: 30px;
+    height: 48px;
     border-radius: 6px;
+    font-size: 24px;
 }
 
 button {
-    font-size: 24px;
+    font-size: 28px;
     padding: 10px;
     color: white;
     border: 2px solid #2d69a5;
@@ -23,8 +28,73 @@ button {
 }
 
 .container {
-    justify-items: center;
-    display: grid;
+    align-items: center;
+    display: flex;
     justify-content: center;
     gap: 10px;
+}
+
+
+.gifImage {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.gifImage img {
+    justify-self: center;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+@media screen and (max-width: 856px) {
+    .gifImage {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    input {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 806px) {
+    .container {
+        align-items: center;
+        width: 400px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .gifImage {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    button {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .container {
+        width: 250px;
+    }
+
+    .gifImage {
+        margin-top: 0px;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
